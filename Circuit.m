@@ -1,0 +1,30 @@
+classdef Circuit
+    properties
+        AX;
+        AY;
+        BX;
+        BY;
+        CX;
+        CY;
+        SplitNum;
+        SplitRadius;
+        LineRadius;
+        Voltage;
+        Current;
+    end
+    methods
+        function obj=AssignCircuit(obj,AX,AY,BX,BY,CX,CY,SplitNum,SplitRadius,LineRadius,Voltage,Current)
+            obj.AX=AX;
+            obj.AY=AY;
+            obj.BX=BX;
+            obj.BY=BY;
+            obj.CX=CX;
+            obj.CY=CY;
+            obj.SplitNum=SplitNum;
+            obj.SplitRadius=SplitRadius;
+            obj.LineRadius=LineRadius;
+            obj.Voltage=Voltage;
+            obj.Current=Current;
+        end
+    end
+end
