@@ -2,8 +2,8 @@ classdef SimulationRegionSet
     properties
         SimulationRegionIndex;
         SimulationRegionChoose;
-    end
-    methods
+%     end
+%     methods
         function obj=Add(obj,SurfaceState,ModelState,SurfaceParameter,p1X,p1Y,p2X,p2Y)
             L=length(obj.SimulationRegionIndex);
             obj.SimulationRegionIndex(L+1).AssignRegion(SurfaceState,ModelState,SurfaceParameter,p1X,p1Y,p2X,p2Y);
